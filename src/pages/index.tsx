@@ -1,11 +1,11 @@
-import MainContent from "@/components/MainContent";
+import MainLayout from "@/components/MainLayout";
 
 export default function HomePage() {
     return (
-        <MainContent>
+        <MainLayout>
             <div>
                 main page
             </div>
-        </MainContent>
+        </MainLayout>
     )
 }

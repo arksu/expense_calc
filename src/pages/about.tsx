@@ -1,9 +1,9 @@
-import MainContent from "@/components/MainContent";
+import MainLayout from "@/components/MainLayout";
 
 export default function About() {
     return (
-        <MainContent>
+        <MainLayout>
             About
-        </MainContent>
+        </MainLayout>
     )
 }

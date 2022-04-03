@@ -1,12 +1,12 @@
-import MainContent from "@/components/MainContent";
+import MainLayout from "@/components/MainLayout";
 
 /**
  * Список расходов
  */
 export default function Expenses() {
     return (
-        <MainContent>
+        <MainLayout>
             Список расходов
-        </MainContent>
+        </MainLayout>
     )
 }

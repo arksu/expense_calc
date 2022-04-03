@@ -1,6 +1,6 @@
 import NavBar from "@/components/NavBar";
 
-export default function MainContent (props : any) {
+export default function MainLayout (props : any) {
     return (
         <>
             <NavBar></NavBar>

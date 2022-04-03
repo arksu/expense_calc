@@ -1,0 +1,17 @@
+.navbar {
+  position: fixed;
+  height: 50px;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: cornflowerblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: red;
+
+  a {
+    text-decoration: none;
+  }
+}

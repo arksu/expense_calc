@@ -1,7 +1,7 @@
 import {GetStaticPaths, GetStaticProps} from "next";
 import {ParsedUrlQuery} from "querystring";
 import Link from "next/link";
-import MainContent from "@/components/MainContent";
+import MainLayout from "@/components/MainLayout";
 
 interface ExpenseProps {
     id: string
@@ -18,10 +18,10 @@ interface ExpenseParams extends ParsedUrlQuery {
  */
 export default function Expense({id}: ExpenseProps) {
     return (
-        <MainContent>
+        <MainLayout>
             <Link href={"/expenses"}><a>Back to list</a></Link>
             expense {id}
-        </MainContent>
+        </MainLayout>
     )
 }
 
