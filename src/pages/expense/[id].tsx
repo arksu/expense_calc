@@ -20,7 +20,8 @@ export default function Expense({id}: ExpenseProps) {
     return (
         <MainLayout>
             <Link href={"/expenses"}><a>Back to list</a></Link>
-            expense {id}
+            <p>expense id: {id}</p>
+
         </MainLayout>
     )
 }
@@ -34,9 +35,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<ExpenseProps, ExpenseParams> = async (context) => {
 
-    return {
-        props: {
-            id: context.params?.id ?? "0"
+    try {
+        if (context.params?.id == "3") {
+            throw Error("some error")
         }
+        return {
+            props: {
+                id: context.params?.id ?? "0"
+            }
+        }
+    } catch (e) {
+        throw e
     }
+
 }

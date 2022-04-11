@@ -1,7 +1,7 @@
 import Head from "next/head";
 import {AppProps} from "next/app";
 
-require("@/styles/global.scss")
+require("@/styles/global.less")
 
 export default function App({Component, pageProps } : AppProps) {
     return (
